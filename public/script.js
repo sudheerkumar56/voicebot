@@ -27,24 +27,7 @@ recognition.onerror = (e) => {
   alert('Speech recognition error: ' + e.error);
 };
 
-themeSwitcher.addEventListener('change', () => {
-  document.body.classList.toggle('dark', themeSwitcher.checked);
-});
 
-uploadBtn.addEventListener('click', () => {
-  const file = uploadFile.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = () => {
-      const content = reader.result.trim();
-      userText.textContent = content;
-      getBotResponse(content);
-    };
-    reader.readAsText(file);
-  } else {
-    alert("Please select a .txt file first.");
-  }
-});
 
 async function getBotResponse(question) {
   const response = await fetch('/ask', {
