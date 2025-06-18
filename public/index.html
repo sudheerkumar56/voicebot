@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Bot – Aum Raj Bachu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeSwitcher">
+      <span class="slider"></span>
+    </label>
+    <span class="theme-label">Dark Mode</span>
+  </div> -->
+
+  <div class="wrapper">
+    <div class="card">
+      <h1>🎙️ Voice Bot Interview</h1>
+      <p class="subtitle">Ask your question and hear a smart, personalized answer.</p>
+
+      <button id="speakBtn" class="btn">🎤 Tap to Speak</button>
+      <div id="listeningIndicator" class="pulse hidden">🎧 Listening...</div>
+
+      <!-- <div class="upload-section">
+        <input type="file" id="uploadFile" accept=".txt" />
+        <button id="uploadBtn" class="btn small">Upload & Ask</button>
+      </div> -->
+
+      <div class="output">
+        <p><strong>🗣️ You:</strong> <span id="userText">Waiting for input...</span></p>
+        <p><strong>🤖 Bot:</strong> <span id="botResponse">...</span></p>
+      </div>
+    </div>
+    <footer>Built with ❤️ by Aum Raj Bachu</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
